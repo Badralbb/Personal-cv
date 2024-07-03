@@ -1,7 +1,7 @@
 export function Head() {
     return (
        
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center dark:text-[#F9FAFB]">
             <div>&lt;ss/&gt;</div>
             <div>
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

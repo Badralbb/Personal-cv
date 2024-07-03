@@ -1,8 +1,8 @@
 export const Experience = ()=>{
     return(
         <div className="mt-11">
-            <h3 className="text-2xl text-[#111827]">Curious about me? Here you have it:</h3>
-            <div className="mt-6 flex flex-col gap-4 text-[#4B5563] text-base text-wrap">
+            <h3 className="text-2xl text-[#111827] dark:text-[#F9FAFB]">Curious about me? Here you have it:</h3>
+            <div className="mt-6 flex flex-col gap-4 text-[#4B5563] text-base text-wrap dark:text-[#D1D5DB]">
             <p>
             I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
             </p>
@@ -18,7 +18,7 @@ export const Experience = ()=>{
             <p>
             Finally, some quick bits about me.
             </p>
-            <div className="flex gap-2.5 ml-4">
+            <div className="flex gap-2.5 ml-4 dark:text-[#D1D5DB]">
                 <ul className="list-disc w-[166px] flex flex-col gap-2.5">
                     <li>B.E. in Computer Engineering</li>
                     <li>Full time   freelancer</li>

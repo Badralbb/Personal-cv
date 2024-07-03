@@ -1,9 +1,9 @@
 export const Skills = () => {
-    return (<div>
-        <div className="w-[75px] m-auto bg-[#E5E7EB] px-5 py-1 rounded-xl" >
-            <button>Skills</button>
+    return (<div className="dark:text-[#D1D5DB]">
+        <div className="w-[75px]  m-auto dark:bg-[#374151] bg-[#E5E7EB] px-5 py-1 rounded-xl" >
+            <button className="dark:text-[#D1D5DB]">Skills</button>
         </div>
-        <div className="text-[#4B5563] text-lg text-center mt-4">The skills, tools and technologies I am really good at:</div>
+        <div className="text-[#4B5563] dark:text-[#D1D5DB] text-lg text-center mt-4">The skills, tools and technologies I am really good at:</div>
 
         <div className="mt-6 flex flex-col gap-4">
             <div className="flex justify-between">
