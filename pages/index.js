@@ -12,6 +12,8 @@ import { FaceImage } from "@/components/FaceImage";
 import { Work } from "@/components/Work";
 import { Fiskil } from "@/components/Fiskil";
 import { Footer } from "@/components/Footer";
+import { DownloadCv } from "@/components/DownloadCv";
+import { HeaderDesktop } from "@/components/HeaderDesktop";
 
 
 
@@ -46,7 +48,7 @@ export default function Home() {
         </section>
         <section className="w-[343px] m-auto py-16 flex flex-col gap-6">
           <div>
-          <Work />
+            <Work />
           </div>
           <Fiskil />
           <Fiskil />
@@ -71,8 +73,19 @@ export default function Home() {
             2023 | Designed and coded with ❤️️ by Sagar Shah
           </div>
         </section>
-      </main>
+        <section className="w-[375px] m-auto hidden">
 
+          <DownloadCv />
+        </section>
+      </main>
+      <section className="w-[1280px] m-auto hidden sm:block">
+        <HeaderDesktop />
+      </section>
+      <section className="w-[100%] bg-[#F9FAFB] mt-24">
+      <section className="w-[1280px] m-auto hidden sm:block">
+      
+      </section>
+      </section>
     </main>
   );
 }

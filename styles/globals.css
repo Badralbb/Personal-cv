@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h2{
+    color: #111827;
+}
+div{
+    color: #4B5563;font-size: 16px;line-height:24px ;
+}
