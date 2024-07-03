@@ -14,7 +14,8 @@ import { FaceImage } from "@/components/FaceImage";
 
 export default function Home() {
   return (
-    <main className="sm">
+    <main>
+      <main  className="sm:hidden">
       <section className="w-[343px] m-auto">
         <Head />
         <FaceImage/>
@@ -40,6 +41,8 @@ export default function Home() {
             <ExperienceBar/>
         </div>
       </section>
+      </main>
+   
     </main>
   );
 }
