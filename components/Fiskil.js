@@ -1,5 +1,5 @@
 
-import { Buttons } from "./buttons"
+
 
 export const Fiskil = ()=>{
     return(
@@ -9,7 +9,7 @@ export const Fiskil = ()=>{
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
         </p>
         <div className="flex flex-wrap gap-2">
-        <div className="dark:bg-[#374151] bg-[#E5E7EB] px-5 py-1 rounded-xl" >
+        <div className="bg-[#E5E7EB] dark:bg-[#374151] px-5 py-1 rounded-xl" >
                 <button>React</button>
             </div>
             <div className="dark:bg-[#374151] bg-[#E5E7EB] px-5 py-1 rounded-xl" >

@@ -1,9 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-h2{
+
+@media(min-width:640px){
+    h2{
     color: #111827;
 }
 div{
     color: #4B5563;font-size: 16px;line-height:24px ;
+}
+#Image{
+    box-shadow: -35px 35px 0px -2px #E5E7EB
+    
+}
+}
+@media (prefers-color-scheme:dark) {
+    h2{
+        color: #F9FAFB;
+    }
+    div{
+        color: #D1D5DB;
+    }
+    li{
+        color: #D1D5DB;
+    }
+    h3{
+        color: #D1D5DB;
+    }
+    svg{
+    fill: white;
+    }
 }
