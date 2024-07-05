@@ -28,6 +28,7 @@ export const HeaderDesktop = () => {
                         <path d="M12.3401 23.6599L10.9301 25.0699" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M25.07 10.9299L23.66 12.3399" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
+                    
                     <div className="bg-[#111827]  rounded-xl dark:bg-[#F9FAFB] text-center py-1.5 px-4">
                         <button>Download CV</button>
                     </div>

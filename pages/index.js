@@ -22,7 +22,9 @@ import { WorkDesktopReverse } from "@/components/WorkDesktopReverse";
 import { FooterDesktop } from "@/components/FooterDesktop";
 import { Upwork } from "@/components/Upwork";
 
-
+const experience = [{title:"Sr. Frontend Developer",startDate:"Nov 2021 - Present",listItems : ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Ut pretium arcu et massa semper, id fringilla leo semper.","Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
+{title:"Team Lead",startDate:"Jul 2017 - Oct 2021",listItems : ["Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
+{title:"Full Stack Developer",startDate:"Dec 2015 - May 2017",listItems : ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }]
 
 export default function Home() {
   return (
@@ -85,7 +87,7 @@ export default function Home() {
           <DownloadCv />
         </section>
       </main>
-      
+
       {/* header */}
       <section className="w-[1280px] m-auto hidden sm:block">
         <HeaderDesktop />
@@ -106,9 +108,15 @@ export default function Home() {
       <section className="w-[100%] hidden sm:block dark:bg-[#111827] bg-[#F9FAFB] py-24">
         <section className="w-[1280px] m-auto">
           <ExperienceDesktop />
-          <Upwork/>
-          <Upwork/>
-          <Upwork/>
+          {experience.map((items,index) => (
+             <div key={index}>
+             <Upwork props={items} />
+             </div>
+          ))}
+         
+       
+          {/* <Upwork />
+          <Upwork /> */}
         </section>
       </section>
       {/* Work */}
@@ -125,10 +133,10 @@ export default function Home() {
         <WorkDesktop />
       </section>
       <section className="mt-24 hidden sm:block">
-        <FooterDesktop/>
+        <FooterDesktop />
       </section>
       <section className="dark:bg-[#111827] bg-[#F9FAFB] w-[100%] mt-24 hidden sm:block">
-      <section className=" flex w-[375px] m-auto justify-center items-center py-6">
+        <section className=" flex w-[375px] m-auto justify-center items-center py-6">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_1095)">
               <path d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -141,12 +149,13 @@ export default function Home() {
             </defs>
           </svg>
 
+
           <div className="text-sm text-[#4B5563] dark:text-[#4B5563]">
             2023 | Designed and coded with ❤️️ by Sagar Shah
           </div>
         </section>
       </section>
-      
+
     </main>
   );
 }
