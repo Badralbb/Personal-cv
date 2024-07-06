@@ -2,32 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@media(min-width:640px){
-    h2{
+@media (min-width: 640px) {
+  h2 {
     color: #111827;
+  }
+  div {
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #Image {
+    box-shadow: -35px 35px 0px -2px #e5e7eb;
+  }
 }
-div{
-    color: #4B5563;font-size: 16px;line-height:24px ;
-}
-#Image{
-    box-shadow: -35px 35px 0px -2px #E5E7EB
-    
-}
-}
-@media (prefers-color-scheme:dark) {
-    h2{
-        color: #F9FAFB;
-    }
-    div{
-        color: #D1D5DB;
-    }
-    li{
-        color: #D1D5DB;
-    }
-    h3{
-        color: #D1D5DB;
-    }
-    svg{
+@media (prefers-color-scheme: dark) {
+  h2 {
+    color: #f9fafb;
+  }
+  div {
+    color: #d1d5db;
+  }
+  li {
+    color: #d1d5db;
+  }
+  h3 {
+    color: #d1d5db;
+  }
+  svg {
     fill: white;
-    }
+  }
+  #list li {
+    color: #4b5563;
+  }
 }
