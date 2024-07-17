@@ -1,6 +1,11 @@
 import Image from "next/image"
 import { Fiskil } from "./Fiskil"
-
+const works = [{image:"/images/Picture.png",Fiskil:"Fiskil",
+    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+tags:[
+    "React","Next.js","TypeScript","Nest.js","PostgreSQL","Tailwindcss","Figma",
+    "Cypress","Storybook","Git"
+]}]
 export const WorkDesktop = () => {
     return (
         <div className="dark:text-[#D1D5DB]">

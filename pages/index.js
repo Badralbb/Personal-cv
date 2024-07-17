@@ -102,7 +102,7 @@ export default function Home() {
 
       {/* Skills */}
       <section className="w-[1280px] m-auto py-24 hidden sm:block">
-        <SkillsDesktop />
+        <SkillsDesktop  />
       </section>
       {/* Experience */}
       <section className="w-[100%] hidden sm:block dark:bg-[#111827] bg-[#F9FAFB] py-24">

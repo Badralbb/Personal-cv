@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @media(min-width:640px){
     h2{
     color: #111827;
@@ -27,7 +27,8 @@ div{
     h3{
         color: #D1D5DB;
     }
-    svg{
-    fill: white;
-    }
+    
+}
+*{
+    font-family: "Inter";
 }
