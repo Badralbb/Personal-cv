@@ -21,10 +21,12 @@ import { WorkDesktop } from "@/components/WorkDesktop";
 import { WorkDesktopReverse } from "@/components/WorkDesktopReverse";
 import { FooterDesktop } from "@/components/FooterDesktop";
 import { Upwork } from "@/components/Upwork";
+import { useState } from "react";
 
 const experience = [{title:"Sr. Frontend Developer",startDate:"Nov 2021 - Present",listItems : ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Ut pretium arcu et massa semper, id fringilla leo semper.","Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
 {title:"Team Lead",startDate:"Jul 2017 - Oct 2021",listItems : ["Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
 {title:"Full Stack Developer",startDate:"Dec 2015 - May 2017",listItems : ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }]
+
 
 export default function Home() {
   return (
@@ -38,6 +40,9 @@ export default function Home() {
           <IntroductionLong />
           <FromCountry />
           <InformationSvg />
+        </section>
+        <section className="w-[100%] m-auto block">
+          <DownloadCv />
         </section>
         <section className="w-[375px] m-auto mt-16 bg-[#F9FAFB] dark:bg-[#111827] pb-16">
           <div className="w-[343px] m-auto">
@@ -59,8 +64,8 @@ export default function Home() {
           <div>
             <Work />
           </div>
-          <Fiskil />
-          <Fiskil />
+          {/* <Fiskil />
+          <Fiskil /> */}
         </section>
         <section className="w-[343px] m-auto py-16">
           <Footer />
@@ -82,10 +87,7 @@ export default function Home() {
             2023 | Designed and coded with ❤️️ by Sagar Shah
           </div>
         </section>
-        <section className="w-[375px] m-auto hidden">
-
-          <DownloadCv />
-        </section>
+        
       </main>
 
       {/* header */}

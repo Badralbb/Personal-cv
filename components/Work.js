@@ -14,7 +14,7 @@ export const Work = () => {
             <div className="bg-[#F3F4F6] py-8 px-8 rounded-t-md dark:bg-[#374151]">
                 <Image src="/images/Picture.png" width={279} height={192}/>
             </div>
-            <Fiskil/>
+            {/* <Fiskil/> */}
         </div>
     )
 }

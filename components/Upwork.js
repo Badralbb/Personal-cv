@@ -5,13 +5,7 @@ export const Upwork = ({ props }) => {
       <div className="bg-[#FFFFFF] dark:bg-[#1F2937] w-[896px] m-auto rounded-xl border-1 shadow-black shadow-md p-[32px]">
         <div className="m-auto flex justify-between">
 
-            <div><img src="images/logo-upwork.png"/></div>
-            
-            <div className="w-[384px]">
-                <div className="flex justify-between">
-                    <h2 className="text-[#111827] text-lg dark:text-[#F9FAFB]">{props.title}</h2>
-                    
-                </div>
+           
 
           <div>
             <img src="images/logo-upwork.png" />
@@ -43,6 +37,6 @@ export const Upwork = ({ props }) => {
         </div>
       </div>
     </div>
-    </div>
+    
   );
 };
