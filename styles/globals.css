@@ -29,6 +29,9 @@ div{
     box-shadow: -35px 35px 0px -2px #E5E7EB
     
 }
+svg:hover{
+cursor: pointer;
+}
 
 @media (prefers-color-scheme:dark) {
     h2{

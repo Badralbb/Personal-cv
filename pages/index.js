@@ -23,9 +23,9 @@ import { FooterDesktop } from "@/components/FooterDesktop";
 import { Upwork } from "@/components/Upwork";
 import { useState } from "react";
 
-const experience = [{title:"Sr. Frontend Developer",startDate:"Nov 2021 - Present",listItems : ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Ut pretium arcu et massa semper, id fringilla leo semper.","Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
-{title:"Team Lead",startDate:"Jul 2017 - Oct 2021",listItems : ["Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Sed quis justo ac magna.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
-{title:"Full Stack Developer",startDate:"Dec 2015 - May 2017",listItems : ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }]
+const experience = [{ title: "Sr. Frontend Developer", startDate: "Nov 2021 - Present", listItems: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Ut pretium arcu et massa semper, id fringilla leo semper.", "Sed quis justo ac magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
+{ title: "Team Lead", startDate: "Jul 2017 - Oct 2021", listItems: ["Sed quis justo ac magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Sed quis justo ac magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."] },
+{ title: "Full Stack Developer", startDate: "Dec 2015 - May 2017", listItems: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }]
 
 
 export default function Home() {
@@ -34,15 +34,13 @@ export default function Home() {
       <main className="sm:hidden">
         <section className="w-[343px] m-auto">
           <Head />
-          <FaceImage />
-          <Introduction />
 
-          <IntroductionLong />
-          <FromCountry />
-          <InformationSvg />
+
+
+
         </section>
         <section className="w-[100%] m-auto block">
-          <DownloadCv />
+          {/* <DownloadCv /> */}
         </section>
         <section className="w-[375px] m-auto mt-16 bg-[#F9FAFB] dark:bg-[#111827] pb-16">
           <div className="w-[343px] m-auto">
@@ -87,7 +85,7 @@ export default function Home() {
             2023 | Designed and coded with ❤️️ by Sagar Shah
           </div>
         </section>
-        
+
       </main>
 
       {/* header */}
@@ -104,19 +102,19 @@ export default function Home() {
 
       {/* Skills */}
       <section className="w-[1280px] m-auto py-24 hidden sm:block">
-        <SkillsDesktop  />
+        <SkillsDesktop />
       </section>
       {/* Experience */}
       <section className="w-[100%] hidden sm:block dark:bg-[#111827] bg-[#F9FAFB] py-24">
         <section className="w-[1280px] m-auto">
           <ExperienceDesktop />
-          {experience.map((items,index) => (
-             <div key={index}>
-             <Upwork props={items} />
-             </div>
+          {experience.map((items, index) => (
+            <div key={index}>
+              <Upwork props={items} />
+            </div>
           ))}
-         
-       
+
+
           {/* <Upwork />
           <Upwork /> */}
         </section>
@@ -131,8 +129,8 @@ export default function Home() {
         <div className="text-[#4B5563] dark:text-[#F9FAFB] text-lg text-center mt-4">Some of the noteworthy projects I have built:</div>
 
         <WorkDesktop />
-        <WorkDesktopReverse />
-        <WorkDesktop />
+        {/* <WorkDesktopReverse />
+        <WorkDesktop /> */}
       </section>
       <section className="mt-24 hidden sm:block">
         <FooterDesktop />

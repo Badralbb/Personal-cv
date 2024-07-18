@@ -1,28 +1,32 @@
+import { useState } from "react"
+import { Head } from "./Head"
+
+const header = ['About',
+    'Work', 'Testimonials', 'Contact'
+]
+
 export const DownloadCv = () => {
+   
     return (
-        <div className="px-4">
+        
+        <div className={`px-4 ${open ? "block" : "hidden"}`}>
             <div className="flex justify-between items-center dark:text-[#F9FAFB] pt-4 pb-5 border-b">
                 <div>&lt;SS/&gt;</div>
                 <div>
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg onClick={Hide} width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24 12L12 24" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M12 12L24 24" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
             </div>
             <div className="flex flex-col gap-4 py-4 border-y text-[#4B5563]">
-                <div>
-                    About
-                </div>
-                <div>
-                    Work
-                </div>
-                <div>
-                    Testimonials
-                </div>
-                <div>
-                    Contact
-                </div>
+                {header.map((item,index)=>(
+                     <div>
+                        {item}
+                     </div>
+                    ))
+                   
+                }
             </div>
             <div className="mt-4">
                 <div className="flex justify-between items-center">
